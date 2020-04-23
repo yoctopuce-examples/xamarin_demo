@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <Button
+      android:id="@+id/ButtonRefresh"
+
+
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:onClick="refreshInventory"
+      android:text="refresh"
+      tools:ignore="HardcodedText" />
+
+
+    <TextView
+      style="?android:listSeparatorTextViewStyle"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Inventory:"
+      tools:ignore="HardcodedText" />
+
+    <LinearLayout
+      android:id="@+id/InventoryList"
+      android:layout_margin="15dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"></LinearLayout>
+</LinearLayout>
